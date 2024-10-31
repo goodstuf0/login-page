@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1f293e;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    width: 350px;
+    height: 400px;
+}
+.login-box form{
+    width: 100%;
+    padding: 0 50px;
+}
+.input-box{
+    margin: 25px 0;
+}
+.input-box input{
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid gray;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px;
+    caret-color: aliceblue;
+    color: white;
+}
+.forgot-pass{
+    text-align: center;
+}
+.forgot-pass a{
+    color: aliceblue;
+    font-size: small;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    color: rgb(44, 210, 240);
+}
+#btn1{
+    border: 2px solid aqua;
+    background-color: rgb(44, 210, 240);
+    border-radius: 25px;
+    height: 40px;
+    width: 250px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#signup{
+    color: aqua;
+    text-decoration: none;
+    margin-left: 100px;
+    left: 195px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.container span{
+    background-color: #2c4766;
+    width: 25px;
+    height: 6px;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 20px;
+    transform-origin: 100px;
+    transform: scale(2.9) rotate(calc(var(--line) * (360deg / 50)));
+    animation: animationlogin 3s linear infinite;
+    animation-delay: calc(var(--line) * (3s / 50));
+}
+@keyframes animationlogin{
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: #2c4766;
+    }
+}
+.circle{
+position: relative;
+bottom: 150px;
+right: -70px;
+}
+@media (max-width:600px){
+    .container{
+        width: 70%;
+        height: 70%;
+    }
+}
